@@ -1,4 +1,5 @@
-thonSome (hopefully useful) code for GWAS.
+
+Some (hopefully useful) code for GWAS.
 
 Requirements: python, numpy, scipy
 
@@ -9,6 +10,8 @@ Usage: python rrm.py [-h] [-snps snps] [-out out] [--ibs out] plinkfile
 Calculates the realised related matrix on some PLINK binary data.  See the methods section of this paper for details:
 
 http://www.nature.com/ng/journal/v42/n7/full/ng.608.html
+
+
 
 lmem.py
 
