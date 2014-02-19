@@ -12,7 +12,7 @@ http://www.nature.com/ng/journal/v42/n7/full/ng.608.html
 
 lmem.py
 
-usage: lmem.py [-h] [-genfile genfile] [-header nrows]
+usage: python lmem.py [-h] [-genfile genfile] [-header nrows]
                [-covariates covariates] [-weights weights]
                [-linebuffer linebuffer] [--uncorrected uncorrected]
                [-nprocess nprocess] [-jobnum jobnum]
