@@ -36,7 +36,7 @@ for chrom,pos,rsid,ref,alt,genotypes in infile:
     afreq = float(2*(genotypes==2).sum() + (genotypes==1).sum())/(2*float(n))
     if afreq>0.0 and afreq<1.0:
         rrm += np.outer((genotypes-2*afreq),(genotypes - 2*afreq)/(2*afreq*(1-afreq)))
-        rrm_diag += genotypes**2 - (1+2*afreq)*genotypes + 2*afreq**2
+        rrm_diag += (genotypes**2 - (1+2*afreq)*genotypes + 2*afreq**2)/(2*afreq*(1-afreq))
     else:
         nmono += 1
 
